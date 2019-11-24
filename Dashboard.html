@@ -17,7 +17,7 @@
       labels: ["FOREX", "Shares", "Indices", "Stocks"],
       datasets: [{
         label: 'Trading Portfolio',
-        data: [],//start empty
+        data: [-10, 1, 400, 5],//start empty
         backgroundColor: [
           'rgba(10, 168, 196, 0.2)',
           'rgba(102, 96, 151, 0.2)',
@@ -38,6 +38,9 @@
       }]
     },
     options: {
+      legend: {
+        display: false
+      },
       scales: {
         yAxes: [{
           ticks: {
