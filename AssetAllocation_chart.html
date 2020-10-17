@@ -14,33 +14,26 @@
   var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ["FOREX", "Shares", "Indices", "Stocks"],
+      labels: ["Crypto", "Forex", "Shares", "Commodities"],
       datasets: [{
-        label: 'Trading Portfolio',
-        data: [-10, 1, 400, 5],//start empty
+        label: 'Capital distribution [%]',
+        data: [],//start empty
         backgroundColor: [
           'rgba(10, 168, 196, 0.2)',
           'rgba(102, 96, 151, 0.2)',
           'rgba(57, 87, 255, 0.2)',
-          'rgba(233, 182, 233, 0.2)',
-          'rgba(108, 213, 207, 0.2)',
-          'rgba(125, 178, 230, 0.2)'
+          'rgba(233, 182, 233, 0.2)'
         ],
         borderColor: [
           'rgba(10, 168, 196, 1)',
           'rgba(102, 96, 151, 1)',
           'rgba(57, 87, 255, 1)',
-          'rgba(233, 182, 233, 1)',
-          'rgba(108, 213, 207, 1)',
-          'rgba(125, 178, 230, 1)'
+          'rgba(233, 182, 233, 1)'
         ],
         borderWidth: 1
       }]
     },
     options: {
-      legend: {
-        display: false
-      },
       scales: {
         yAxes: [{
           ticks: {
